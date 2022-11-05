@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Tic Tac Toe</h1>
+    </div>
+
+    <div class="box-container">
+      <div class="box" onclick="clickHandler(event)" id="box1" name="0"></div>
+      <div class="box" onclick="clickHandler(event)" id="box2" name="1"></div>
+      <div class="box" onclick="clickHandler(event)" id="box3" name="2"></div>
+      <div class="box" onclick="clickHandler(event)" id="box4" name="3"></div>
+      <div class="box" onclick="clickHandler(event)" id="box5" name="4"></div>
+      <div class="box" onclick="clickHandler(event)" id="box6" name="5"></div>
+      <div class="box" onclick="clickHandler(event)" id="box7" name="6"></div>
+      <div class="box" onclick="clickHandler(event)" id="box8" name="7"></div>
+      <div class="box" onclick="clickHandler(event)" id="box9" name="8"></div>
+    </div>
+
+    <div class="turn">Turn : <span id="turn">1P</span></div>
+    <h3 id="winner"></h3>
+    <button onclick="restart()">Restart</button>
+  </body>
+</html>
